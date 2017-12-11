@@ -169,8 +169,6 @@ var butt3 = function() {
   list3.appendChild(listElement);
 }
 
-button3.addEventListener('click', butt3);
-
 // hexagonal numbers
 var hexNum = 1;
 var hexagon = function(n) {
