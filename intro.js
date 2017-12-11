@@ -107,13 +107,16 @@ var addN = function() {
 addList("AddN", addN);
 
 /*
+// add second list through DOM
 var list2 = document.createElement("ol");
 body.appendChild(list2);
 
+// add second button through DOM
 var button2 = document.createElement("button");
 button2.innerHTML = "button2";
 body.appendChild(button2);
 
+// fibonacci
 var fibNum = 1;
 var fibonacci = function(n) {
   if (n == 0) {
@@ -127,14 +130,16 @@ var fibonacci = function(n) {
   }
 }
 
+// 2 ^ n
 var timesNum = 1;
 var times2 = function(n) {
   return Math.pow(2, n);
 }
 
+// uses fibonacci() for first 2 elements, then uses previous list elements
 var butt2 = function() {
   var listElement = document.createElement("li");
-  if (fibNum < 2) {
+  if (fibNum < 3) {
     listElement.innerHTML = fibonacci(fibNum);
   }
   else {
@@ -147,13 +152,16 @@ var butt2 = function() {
 
 button2.addEventListener('click', butt2);
 
+// adds another list through DOM
 var list3 = document.createElement("ol");
 body.appendChild(list3);
 
+// adds another button through DOM
 var button3 = document.createElement("button");
 button3.innerHTML = "button3";
 body.appendChild(button3);
 
+// click functionality
 var butt3 = function() {
   var listElement = document.createElement("li");
   listElement.innerHTML = times2(timesNum);
@@ -163,22 +171,31 @@ var butt3 = function() {
 
 button3.addEventListener('click', butt3);
 
+// hexagonal numbers
 var hexNum = 1;
 var hexagon = function(n) {
   return 2 * n * n - n;
 }
 
+// add another list through DOM
 var list4 = document.createElement("ol");
 body.appendChild(list4);
 
+// add another button through DOM
 var button4 = document.createElement("button");
 button4.innerHTML = "button4";
 body.appendChild(button4);
 
+// click functionality for the button
 var butt4 = function() {
   var listElement = document.createElement("li");
-  listElement.innerHTML = hexNum(hexNum);
+  listElement.innerHTML = hexagon(hexNum);
   hexNum ++;
   list4.appendChild(listElement);
 }
+
+// add event listeners for buttons
+button2.addEventListener('click', butt2);
+button3.addEventListener('click', butt3);
+button4.addEventListener('click', butt4);
 */
